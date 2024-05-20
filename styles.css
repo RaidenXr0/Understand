@@ -172,7 +172,8 @@ section {
     box-shadow: none;
     
 }
-.about{
+.about,
+.slider-2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,10 +301,71 @@ button:hover {
 .image-slider img:hover {
     width: 25%;
 }
-#Project-Head{
+.slider-2{
+    justify-content: right;
+}
+.image-slider-2{
+    padding-top: 100px;
+    width: 100%;
+    height: 600px;
+    display:flex ;
+    gap: 10px;
+
+    
+}
+.image-slider-2 img {
+    border: 2px var(--bg-color);
+    flex-grow: 1;
+    width: 10%;
+    height: 100%;
+    object-fit:contain;
+    transition: all ease-in-out 0.5s;
+}
+.image-slider-2 img:hover {
+    width: 25%;
+}
+#Project-Head h1{
     padding-top: 100px;
     border: 50px transparent;
     font-weight: 600;
     color: var(--text-color);
-    font-size: 4rem;
+    font-size: 4.5rem;
+}
+.Profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+.Profile-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+.Profile-Heading h1{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.Profile-content,
+.Profile-content-2 {
+    text-align: left;
+    line-height: 1.5;
+    padding: 4rem;
+}
+.Profile-content h3{
+    font-size: 3.6rem;
+    color: var(--main-color);
+}
+.Profile-content-2 h3{
+    font-size: 3.6rem;
+    color: var(--bg-color);
+}
+.Profile-content p,
+.Profile-content-2 p{
+    font-size: 2.6rem;
+    margin: 2rem 0 3rem;
+    line-height: 1.5;
 }
